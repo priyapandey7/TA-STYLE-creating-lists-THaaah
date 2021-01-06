@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* custom style */
+
+*
+{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.5;
+font-size: 16px;
+}
+
+/* general */
+
+.container {
+max-width: 1330px;
+margin: 0 auto;
+padding: 0 32px;
+}
+
+.flex {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* header */
+.header {
+background-color: hsl(237, 17%, 24%);
+padding: 16px 0;
+
+}
+
+.header a {
+text-decoration: none;
+color:#fff;
+}
+.header img {
+width: 20px;
+height: 18px;
+color: #a6a7b9;
+}
+
+.brand h1 {
+font-size :36px;
+font-weight: 700;
+}
+.nav {
+text-decoration: none;
+color:#fff;
+font-size: 24px;
+font-weight: 900;
+margin-left: 32px;
+
+}
+ li {
+ margin-left: 32px;
+ padding: 20px; 
+ text-transform: uppercase;
+}
+.sub-menu-box {
+position: relative;
+}
+.sub-menu li{
+margin: 8px 0;
+color: black;
+}
+.sub-menu {
+    position: absolute;
+    width: 140px;
+    background-color:white ;
+    box-shadow:0px 3px 8px rgba(0 0 0 0.3);
+    text-align: center;
+    border: 4px;
+    left: 50%;
+    transform: translate X(-50%);
+    display: none;
+    top: 54px;
+
+}
+.sub-menu a {
+    color: black;
+}
+.sub-menu-box:hover .sub-menu{
+display: inline-block;
+}
+.banner {
+    background-color: #333447;
+    background-image: url(assets/banner.svg);
+    background-position:  bottom;
+    background-repeat: repeat-x;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.banner h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 2;
+    margin: 10px;
+    font-weight: 600;
+}
+.banner p {
+    color: #e96c77;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #e96c77;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 900;
+    line-height: 3em;
+    padding:0 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+}
+.wrapper.style1 {
+    background: #f5f5f5;
+}
+.wrapper {
+    padding: 60px 0;
+}
+.hr-top {
+    width: 500px;  
+    color: black; 
+}
+.hr-middle {
+    width: 450px;
+}
+.hr-bottom {
+	width: 400px;
+}
+.heading-text {
+	color:rgb(10, 9, 9);
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.major p {
+    color: #808080;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+}
+/* feature */
+
+.col {
+    background-color: white;
+    align-items: center;
+    flex: 0 1 33% ;
+    justify-content: center;
+    padding: 20px;
+}
+.icon-box {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color:#E96C77 ;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin-left: 150px;
+}
+.col h3{
+    font-size: 20px;
+    padding:10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+.col p {
+    font-size: 16px;
+    padding:10px 10px;
+    text-align: center;
+    color: black;
+}
+.feature-1 {
+    background-color:#ffffff ;
+    margin:60px 0px ;
+}
+.wrapper.style2 {
+    background-color:#E96C77 ;
+  
+}
+.wrapper {
+    padding: 60px 0;
+}
+.text-1  {
+    color: white;
+}
+.mejor-1 p {
+color: white;
+}
+.col-4 {
+    width: 400px;
+    background-color: pink;
+}
+.wrap {
+    flex-wrap: wrap;
+    margin: 20px;
+    flex: 0 1 40% ;
+}
+.icon-box-2 {
+    background-color:#5B5C6B ;
+}
+
+.col-4 {
+    width: 40%;
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* gellery  */
+.gallery {
+    text-align: center;
+}
+/* contact form */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #979498;
+    margin-bottom: 24px;
+}
+.col-left {
+    width: 50%;
+}
+.col-right {
+    width: 50%;
+    margin-left: 40px;
+}
+.btn {
+    padding:5px 20px;
+    border:1px solid black;
+    font-weight: 700;
+    margin: 10px;
+}
+.btn-1 {
+    color: white;
+    background-color: #E96C77;
+}
+
+.contact {
+    background-color: white;
+    margin-top: 60px;
+}
+.fa  a{
+    text-decoration: none;
+    font-size: 16px;
+  
+}
+
+/* footer */
+.footer {
+    background: #ECECEC;
+    color: #aaa;
+    padding: 4em 0 8em 0;
+    text-align: center;
+}
+ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #aaa;
+}
